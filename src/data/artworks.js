@@ -109,7 +109,7 @@ export const artists = [
     origin: "Nigeria",
     // ── CHANGE AVATAR ────────────────────────────────────────────────────────
     avatar:
-      "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
+      "https://images.unsplash.com/photo-1528900403525-dc523d4f18d6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8WW91bmclMjBtYW58ZW58MHx8MHx8fDA%3D",
     // ── CHANGE COVER ─────────────────────────────────────────────────────────
     cover:
       "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=1400&h=500&fit=crop",
@@ -228,7 +228,7 @@ import cb1 from "../assets/art3-4/cb1.png";
 import cb2 from "../assets/art3-4/cb2.png";
 import p1 from "../assets/art3-4/p1.png";
 import p2 from "../assets/art3-4/p2.png";
-import p3 from "../assets/art3-4/p3.png";
+import image3 from "../assets/Hack Pic/image3.jpeg";
 import bead1 from "../assets/7&8/bead1.avif"
 import bead2 from "../assets/7&8/bead2.avif"
 import Paint from "../assets/7&8/Paint.jpg"
@@ -397,9 +397,9 @@ export const artworks = [
     id: "p11",
     title: "The Elder Speaks",
     artist: artists[2],
-    category: "Paintings",
-    image: p3,
-    images: [p3],
+    category: "Sculptures",
+    image: image3,
+    images: [image3],
     isAuction: false,
     currentBid: null,
     startingBid: null,
@@ -420,7 +420,7 @@ export const artworks = [
   },
   {
     id: "p12",
-    title: "Royal Beaded Crown",
+    title: "Family Jolly Ride",
     artist: artists[2],
     category: "Paintings",
     image: p2,
