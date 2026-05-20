@@ -11,9 +11,9 @@ function AuthLayout({ children, image, quote }) {
       <div className="flex flex-col justify-center px-8 md:px-16 py-20 bg-white">
         <Link to="/" className="flex items-center gap-2.5 mb-14">
           <div className="w-9 h-9 bg-cobalt-600 rounded-xl flex items-center justify-center shadow-lg shadow-cobalt-600/30">
-            <span className="font-display text-white text-sm font-semibold">Aм</span>
+            <span className="font-display text-white text-sm font-semibold">BHD</span>
           </div>
-          <span className="font-display text-xl text-ink">Ambassador</span>
+          <span className="font-display text-xl text-ink">BHD Auctions</span>
         </Link>
         {children}
       </div>
@@ -21,7 +21,7 @@ function AuthLayout({ children, image, quote }) {
         <img src={image} alt="" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-br from-cobalt-900/80 to-ink/60 flex flex-col items-start justify-end p-14">
           <p className="font-display text-3xl text-white leading-tight mb-4 max-w-sm italic">"{quote}"</p>
-          <p className="text-white/40 text-sm">— Ambassador founding principle</p>
+          <p className="text-white/40 text-sm">— BHD Auctions founding principle</p>
           <div className="flex items-center gap-2 mt-8">
             <ShieldCheck size={14} className="text-cobalt-400" />
             <p className="text-white/50 text-xs">3,400+ authenticated works from 47 countries</p>

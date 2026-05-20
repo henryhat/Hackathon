@@ -269,7 +269,7 @@ export const artworks = [
 
   {
     id: "p5",
-    title: "Bamana Chiwara Antelope",
+    title: "Two Bowing Nuns",
     artist: artists[0],
     category: "Sculptures",
     image: ab24,
@@ -294,7 +294,7 @@ export const artworks = [
 
   {
     id: "p2",
-    title: "Kente Council Cloth",
+    title: "Oba of Benin",
     artist: artists[1],
     category: "Sculptures",
     image: ab1,
@@ -320,7 +320,7 @@ export const artworks = [
 
   {
     id: "p17",
-    title: "Adinkra Adire Wrap",
+    title: "Moremi's Head",
     artist: artists[1],
     category: "Sculptures",
     image: ab17,
@@ -495,7 +495,7 @@ export const artworks = [
 
   {
     id: "p3",
-    title: "Benin Royal Head",
+    title: "Benin Royal Warlord",
     artist: artists[4],
     category: "Sculptures",
     image: oowcarv1,
@@ -727,7 +727,7 @@ export const artworks = [
   },
 ];
 
-export const recentlySold = [
+export const recentlySold = [ 
   { title: "Benin Bronze Warrior", price: "₦3.2M", buyer: "Lagos" },
   { title: "Ndebele Beadwork Panel", price: "₦890K", buyer: "Accra" },
   { title: "Bamana Chiwara Antelope", price: "₦1.45M", buyer: "London" },

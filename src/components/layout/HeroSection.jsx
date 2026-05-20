@@ -6,7 +6,7 @@ import {
   staggerItem,
   fadeUp,
 } from "../../animations/variants";
-// import newart from "../assets/Hack Pic/newart.png"
+import newart from "../../assets/Hack Pic/newart.png"
 
 export default function HeroSection() {
   return (
@@ -108,7 +108,7 @@ export default function HeroSection() {
               whileHover={{ scale: 1.02, transition: { duration: 0.4 } }}
             >
               <img
-                src="src/assets/Hack Pic/art.png"
+                src={newart}
                 alt="Featured artwork"
                 className="w-full h-full object-cover"
               />

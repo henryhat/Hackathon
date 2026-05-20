@@ -212,7 +212,7 @@ export default function ArtistPage() {
             <p className="text-ink/60 text-sm leading-relaxed">{artist.bio}</p>
             <p className="text-ink/40 text-sm leading-relaxed">
               All works by {artist.name.split(' ')[0]} come with provenance documentation and are covered under
-              Ambassador's Authentication Guarantee. Shipping is handled by our specialist art logistics team.
+              BHD's Authentication Guarantee. Shipping is handled by our specialist art logistics team.
             </p>
             <a href="#" className="inline-flex items-center gap-1.5 text-cobalt-600 text-sm font-medium hover:underline">
               View full portfolio <ExternalLink size={13} />

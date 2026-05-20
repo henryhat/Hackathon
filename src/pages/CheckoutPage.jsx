@@ -217,7 +217,7 @@ export default function CheckoutPage() {
                     {[
                       { label: 'Bank',    value: 'GTBank Nigeria' },
                       { label: 'Account', value: '0123456789' },
-                      { label: 'Name',    value: 'Ambassador Technologies Ltd' },
+                      { label: 'Name',    value: 'BHD Auctioins Technologies Ltd' },
                       { label: 'Amount',  value: formatPrice(total) },
                       { label: 'Ref',     value: `ADURA-${artwork.id.toUpperCase()}-${Date.now().toString().slice(-6)}` },
                     ].map(({ label, value }) => (
@@ -232,7 +232,7 @@ export default function CheckoutPage() {
                 {payMethod === 'wallet' && (
                   <motion.div {...fadeUp} className="bg-cobalt-50 rounded-2xl border border-cobalt-100 p-6">
                     <div className="flex items-center justify-between mb-4">
-                      <p className="font-semibold text-cobalt-700">Ambassador Wallet</p>
+                      <p className="font-semibold text-cobalt-700">BHD Wallet</p>
                       <p className="font-mono font-bold text-cobalt-700">₦12,000,000</p>
                     </div>
                     <div className="flex justify-between text-sm mb-1">
@@ -314,7 +314,7 @@ export default function CheckoutPage() {
                   </button>
 
                   <p className="text-[10px] text-ink/30 text-center flex items-center justify-center gap-1">
-                    <ShieldCheck size={10} /> Secured by Ambassador Payment Shield
+                    <ShieldCheck size={10} /> Secured by BHD Payment Shield
                   </p>
                 </div>
               </div>

@@ -192,7 +192,7 @@ function HowItWorks() {
       <div className="max-w-7xl mx-auto px-5 md:px-8">
         <div className="text-center mb-14">
           <p className="section-label mb-3">Process</p>
-          <h2 className="display-heading text-3xl md:text-4xl text-ink">How Ambassador works</h2>
+          <h2 className="display-heading text-3xl md:text-4xl text-ink">How BHD Auctions works</h2>
           <p className="text-ink/50 text-sm mt-3 max-w-md mx-auto">
             From discovery to your wall — a seamless, trusted experience built for serious collectors.
           </p>
@@ -336,7 +336,7 @@ function FinalCTA() {
         <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-cobalt-900/40 rounded-full blur-3xl" />
       </div>
       <div className="max-w-3xl mx-auto px-5 md:px-8 text-center relative">
-        <p className="section-label text-cobalt-200 mb-4">Join Ambassador</p>
+        <p className="section-label text-cobalt-200 mb-4">Join BHD Auctions</p>
         <h2 className="display-heading text-4xl md:text-5xl text-white mb-5 text-balance">
           Start your African art collection today
         </h2>
