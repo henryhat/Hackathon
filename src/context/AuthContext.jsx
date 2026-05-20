@@ -4,12 +4,13 @@ const AuthContext = createContext(null)
 
 // Demo user — in a real app this comes from a backend / JWT
 const DEMO_USER = {
-  id: 'u1',
-  name: 'Demo Collector',
-  email: 'demo@ambassador.art',
-  avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face',
+  id: "u1",
+  name: "Demo Collector",
+  email: "bhdadmin@gmail.com",
+  avatar:
+    "https://images.unsplash.com/photo-1778517436072-17faa6f57ca7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNzd8fHxlbnwwfHx8fHw%3D",
   balance: 12000000, // ₦12M demo wallet
-}
+};
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null)

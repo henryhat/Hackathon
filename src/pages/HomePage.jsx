@@ -129,7 +129,7 @@ function FeatureSpotlight() {
       <SectionHeader
         label="Spotlight"
         title="Editor's Pick"
-        subtitle="Our most significant piece this week, hand-selected by the Ambassador curatorial team."
+        subtitle="Our most significant piece this week, hand-selected by the BHD Auctions curatorial team."
       />
       <motion.div
         ref={ref}
@@ -341,7 +341,7 @@ function FinalCTA() {
           Start your African art collection today
         </h2>
         <p className="text-cobalt-200 text-base mb-8 max-w-md mx-auto leading-relaxed">
-          Whether you're a serious collector, first-time buyer, or an artist wanting to reach global audiences — Ambassador is built for you.
+          Whether you're a serious collector, first-time buyer, or an artist wanting to reach global audiences — BHD Auctions is built for you.
         </p>
         <div className="flex flex-wrap items-center justify-center gap-3">
           <Link to="/register" className="bg-white text-cobalt-700 font-semibold px-8 py-4 rounded-full hover:bg-ivory transition-colors text-sm">

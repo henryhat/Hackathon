@@ -8,7 +8,7 @@ import { pageTransition, staggerContainer, staggerItem, fadeUp } from '../animat
 const PAYMENT_METHODS = [
   { id: 'card',    label: 'Debit / Credit Card',  icon: CreditCard,  desc: 'Visa, Mastercard, Verve' },
   { id: 'bank',    label: 'Bank Transfer',         icon: Banknote,    desc: 'Direct from your bank' },
-  { id: 'wallet',  label: 'Ambassador Wallet',          icon: ShieldCheck, desc: 'Instant — ₦12M balance' },
+  { id: 'wallet',  label: 'BHD Auctions Wallet',          icon: ShieldCheck, desc: 'Instant — ₦12M balance' },
 ]
 
 export default function CheckoutPage() {

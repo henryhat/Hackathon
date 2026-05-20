@@ -210,7 +210,7 @@ export default function Navbar() {
               className="fixed top-0 right-0 bottom-0 z-40 w-72 bg-white shadow-2xl flex flex-col"
             >
               <div className="flex items-center justify-between px-6 h-16 border-b border-ink/6">
-                <span className="font-display text-xl text-ink">Ambassador</span>
+                <span className="font-display text-xl text-ink">BHD Auctions</span>
                 <button onClick={() => setMobileOpen(false)} className="p-2 rounded-full hover:bg-ink/5">
                   <X size={18} className="text-ink/60" />
                 </button>
