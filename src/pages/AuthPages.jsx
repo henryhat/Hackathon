@@ -53,57 +53,124 @@ export function LoginPage() {
   return (
     <motion.div {...pageTransition}>
       <AuthLayout
-        image="https://images.unsplash.com/photo-1620510625142-b45ba7b1b7b7?w=900&h=1100&fit=crop"
+        image="https://images.unsplash.com/photo-1530092285049-1c42085fd395?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zmxvd2VyJTIwd2FsbHBhcGVyfGVufDB8fDB8fHww"
         quote="Africa's heritage belongs to those who cherish it."
       >
-        <motion.div variants={staggerContainer} initial="initial" animate="animate" className="max-w-sm">
+        <motion.div
+          variants={staggerContainer}
+          initial="initial"
+          animate="animate"
+          className="max-w-sm"
+        >
           <motion.div variants={staggerItem}>
             <p className="section-label mb-2">Welcome back</p>
             <h1 className="font-display text-3xl text-ink mb-1">Sign in</h1>
             <p className="text-ink/50 text-sm mb-8">
-              New here?{' '}
-              <Link to="/register" state={location.state} className="text-cobalt-600 hover:underline font-medium">Create a free account</Link>
+              New here?{" "}
+              <Link
+                to="/register"
+                state={location.state}
+                className="text-cobalt-600 hover:underline font-medium"
+              >
+                Create a free account
+              </Link>
             </p>
           </motion.div>
-          <motion.form variants={staggerItem} onSubmit={handleSubmit} className="space-y-4">
+          <motion.form
+            variants={staggerItem}
+            onSubmit={handleSubmit}
+            className="space-y-4"
+          >
             <div>
-              <label className="text-[10px] text-ink/40 font-semibold uppercase tracking-widest block mb-1.5">Email</label>
-              <input type="email" required value={form.email} onChange={e => setForm({...form, email: e.target.value})}
+              <label className="text-[10px] text-ink/40 font-semibold uppercase tracking-widest block mb-1.5">
+                Email
+              </label>
+              <input
+                type="email"
+                required
+                value={form.email}
+                onChange={(e) => setForm({ ...form, email: e.target.value })}
                 placeholder="you@example.com"
-                className="w-full border border-ink/10 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-cobalt-500 focus:ring-2 focus:ring-cobalt-100 transition-all" />
+                className="w-full border border-ink/10 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-cobalt-500 focus:ring-2 focus:ring-cobalt-100 transition-all"
+              />
             </div>
             <div>
-              <label className="text-[10px] text-ink/40 font-semibold uppercase tracking-widest block mb-1.5">Password</label>
+              <label className="text-[10px] text-ink/40 font-semibold uppercase tracking-widest block mb-1.5">
+                Password
+              </label>
               <div className="relative">
-                <input type={showPw ? 'text' : 'password'} required value={form.password}
-                  onChange={e => setForm({...form, password: e.target.value})} placeholder="••••••••"
-                  className="w-full border border-ink/10 rounded-xl px-4 py-3.5 pr-12 text-sm focus:outline-none focus:border-cobalt-500 focus:ring-2 focus:ring-cobalt-100 transition-all" />
-                <button type="button" onClick={() => setShowPw(!showPw)}
-                  className="absolute right-3.5 top-1/2 -translate-y-1/2 text-ink/30 hover:text-ink/60">
+                <input
+                  type={showPw ? "text" : "password"}
+                  required
+                  value={form.password}
+                  onChange={(e) =>
+                    setForm({ ...form, password: e.target.value })
+                  }
+                  placeholder="••••••••"
+                  className="w-full border border-ink/10 rounded-xl px-4 py-3.5 pr-12 text-sm focus:outline-none focus:border-cobalt-500 focus:ring-2 focus:ring-cobalt-100 transition-all"
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowPw(!showPw)}
+                  className="absolute right-3.5 top-1/2 -translate-y-1/2 text-ink/30 hover:text-ink/60"
+                >
                   {showPw ? <EyeOff size={16} /> : <Eye size={16} />}
                 </button>
               </div>
               <div className="flex justify-end mt-1.5">
-                <a href="#" className="text-xs text-cobalt-600 hover:underline">Forgot password?</a>
+                <a href="#" className="text-xs text-cobalt-600 hover:underline">
+                  Forgot password?
+                </a>
               </div>
             </div>
-            <motion.button type="submit" disabled={loading}
-              whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}
-              className="btn-primary w-full justify-center py-4 rounded-xl font-bold text-sm mt-2 disabled:opacity-60">
-              {loading ? 'Signing in…' : <><ArrowRight size={15} /> Sign In</>}
+            <motion.button
+              type="submit"
+              disabled={loading}
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className="btn-primary w-full justify-center py-4 rounded-xl font-bold text-sm mt-2 disabled:opacity-60"
+            >
+              {loading ? (
+                "Signing in…"
+              ) : (
+                <>
+                  <ArrowRight size={15} /> Sign In
+                </>
+              )}
             </motion.button>
           </motion.form>
           <motion.div variants={staggerItem} className="mt-4 space-y-3">
-            <div className="flex items-center gap-3"><div className="flex-1 h-px bg-ink/8" /><span className="text-xs text-ink/30">or</span><div className="flex-1 h-px bg-ink/8" /></div>
+            <div className="flex items-center gap-3">
+              <div className="flex-1 h-px bg-ink/8" />
+              <span className="text-xs text-ink/30">or</span>
+              <div className="flex-1 h-px bg-ink/8" />
+            </div>
             <button className="w-full border border-ink/10 rounded-xl py-3.5 flex items-center justify-center gap-3 text-sm font-medium hover:bg-ivory transition-colors">
-              <svg width="18" height="18" viewBox="0 0 18 18"><path d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844c-.209 1.125-.843 2.078-1.796 2.716v2.258h2.908c1.702-1.567 2.684-3.874 2.684-6.615z" fill="#4285F4"/><path d="M9 18c2.43 0 4.467-.806 5.956-2.18l-2.908-2.259c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332A8.997 8.997 0 0 0 9 18z" fill="#34A853"/><path d="M3.964 10.71A5.41 5.41 0 0 1 3.682 9c0-.593.102-1.17.282-1.71V4.958H.957A8.996 8.996 0 0 0 0 9c0 1.452.348 2.827.957 4.042l3.007-2.332z" fill="#FBBC05"/><path d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0A8.997 8.997 0 0 0 .957 4.958L3.964 7.29C4.672 5.163 6.656 3.58 9 3.58z" fill="#EA4335"/></svg>
+              <svg width="18" height="18" viewBox="0 0 18 18">
+                <path
+                  d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844c-.209 1.125-.843 2.078-1.796 2.716v2.258h2.908c1.702-1.567 2.684-3.874 2.684-6.615z"
+                  fill="#4285F4"
+                />
+                <path
+                  d="M9 18c2.43 0 4.467-.806 5.956-2.18l-2.908-2.259c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332A8.997 8.997 0 0 0 9 18z"
+                  fill="#34A853"
+                />
+                <path
+                  d="M3.964 10.71A5.41 5.41 0 0 1 3.682 9c0-.593.102-1.17.282-1.71V4.958H.957A8.996 8.996 0 0 0 0 9c0 1.452.348 2.827.957 4.042l3.007-2.332z"
+                  fill="#FBBC05"
+                />
+                <path
+                  d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0A8.997 8.997 0 0 0 .957 4.958L3.964 7.29C4.672 5.163 6.656 3.58 9 3.58z"
+                  fill="#EA4335"
+                />
+              </svg>
               Continue with Google
             </button>
           </motion.div>
         </motion.div>
       </AuthLayout>
     </motion.div>
-  )
+  );
 }
 
 export function RegisterPage() {
